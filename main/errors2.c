@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 16:59:22 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/17 14:53:26 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 14:38:02 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ int	sorted(t_data *information)
 
 int	check_if_there_is_double_one(int argc, char **argv)
 {
-	int i;
-	int j;
-	int count;
+	int	i;
+	int	j;
+	int	count;
 
 	count = 0;
 	j = 0;

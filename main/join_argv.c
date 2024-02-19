@@ -6,29 +6,31 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 16:59:22 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/17 14:53:50 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 14:56:11 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../heiders/push_swap.h"
 
-int count_num(char *s, char espace)
+int	count_num(char *s, char espace)
 {
-    int nb_strings = 0;
-    int i = 0;
+	int	nb_strings;
+	int	i;
 
-    while (s[i] != '\0')
-    {
-        if (s[i] != espace)
-        {
-            while (s[i] != '\0' && s[i] != espace)
-                i++;
-            nb_strings++;
-        }
-        if (s[i])
-            i++;
-    }
-    return nb_strings;
+	nb_strings = 0;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] != espace)
+		{
+			while (s[i] != '\0' && s[i] != espace)
+				i++;
+			nb_strings++;
+		}
+		if (s[i])
+			i++;
+	}
+	return (nb_strings);
 }
 
 int	lent(int ac, char **argv)
@@ -68,11 +70,7 @@ char	**join_argv(int argc, char **argv)
 		{
 			k = 0;
 			while (tab[k] != NULL)
-			{
-				join[j] = tab[k];
-				j++;
-				k++;
-			}
+				join[j++] = tab[k++];
 			free(tab);
 		}
 		i++;

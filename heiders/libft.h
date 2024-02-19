@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 18:02:26 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/17 15:23:31 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 14:30:27 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,8 @@
 # include <unistd.h>
 
 char	**ft_split(char const *s, char c);
-long  ft_atoi(const char *str);
+long	ft_atoi(const char *str);
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *src);
 char	*ft_strjoin(char *s1, char *s2);
-size_t	ft_strlen_v_2(const char *s);
 #endif

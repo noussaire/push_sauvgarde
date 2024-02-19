@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 12:33:44 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/17 14:54:05 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 14:58:35 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ static int	cheack(t_data *information, int numbers, char **new_argv,
 {
 	if (!new_argv)
 		return (write(2, "Error\n", 6), 0);
-
 	if (check_error(numbers, new_argv, format) == 1)
 		return (write(2, "Error\n", 6), ft_free_argv(new_argv, format), 0);
 	if (numbers == 1)
@@ -38,21 +37,23 @@ static int	cheack(t_data *information, int numbers, char **new_argv,
 	return (1);
 }
 
-static int freeeeeeeee(t_data *information, char **new_argv, int format, int numbers)
+static int	freeeeeeeee(t_data *information, char **new_argv, int format,
+		int numbers)
 {
-    if (cheack(information, numbers, new_argv, format) == 0)
-        return (0);
-    all_step(information);
-    ft_free_memory(information);
-    ft_free_argv(new_argv, format);
-    return 1; 
+	if (cheack(information, numbers, new_argv, format) == 0)
+		return (0);
+	all_step(information);
+	ft_free_memory(information);
+	ft_free_argv(new_argv, format);
+	return (1);
 }
 
-static void equal(char ***new_argv, int *number, int argc, char **argv)
+static void	equal(char ***new_argv, int *number, int argc, char **argv)
 {
 	*new_argv = argv;
 	*number = argc;
 }
+
 int	main(int argc, char **argv)
 {
 	t_data	information;
@@ -81,58 +82,3 @@ int	main(int argc, char **argv)
 	}
 	freeeeeeeee(&information, new_argv, format, numbers);
 }
-
-
-
-
-
-
-
-// int main(int argc, char **argv)
-// {
-//     t_data information;
-//     int format;
-//     int numbers;
-//     char **new_argv;
-
-//     format = 0;
-//     numbers = 0;
-//     if (check_format(argc, argv) == 1)
-//     {
-//         format = 1;
-//         new_argv = handle_arguments_format(argv);
-//         if (!new_argv)
-//             return (write(2, "Error\n", 6), 0);
-//         numbers = count_num(argv[1], 32);
-//     }
-//     else
-//     {
-        
-//     if (check_format_two(argc, argv) == 0)
-//     {
-//         new_argv = argv;
-//         numbers = argc;
-//     }
-//     else
-//     {
-//         format = 1;
-//         new_argv = join_argv(argc, argv);
-//         if (!new_argv)
-//             return (write(2, "Error\n", 6), 0);
-//         numbers = lent(argc, argv);
-//     }
-//     }
-//     return (process_data(format, numbers, new_argv, &information));
-// }
-
-
-
-// int process_data(int format, int numbers, char **new_argv, t_data *information)
-// {
-//     if (cheack(information, numbers, new_argv, format) == 0)
-//         return (0);
-//     all_step(information);
-//     ft_free_memory(information);
-//     ft_free_argv(new_argv, format);
-//     return (0);
-// }

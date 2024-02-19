@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 12:33:44 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/17 14:54:53 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 15:03:01 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@ void	ways_to_b(t_data *information, int pos)
 
 int	get_small_number(t_data *information)
 {
-	int var;
-	int i;
-	int pos;
+	int	var;
+	int	i;
+	int	pos;
 
 	var = information->stack_a[0];
 	i = 0;

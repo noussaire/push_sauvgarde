@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 12:33:44 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/01 15:31:51 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 14:59:12 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	remplire_stack_a(t_data *information, char **argv, int format)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (format == 1)

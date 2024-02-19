@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 12:33:44 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/12 14:26:14 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 15:00:49 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ void	plus_petite_number(int *counter, int *stack_a_copy, int *tab, int i)
 
 int	*sort_list(t_data *information)
 {
-	int counter;
-	int *tab;
-	int *stack_a_copy;
-	int i;
+	int	counter;
+	int	*tab;
+	int	*stack_a_copy;
+	int	i;
 
 	counter = information->total_numbers;
 	tab = malloc(sizeof(int) * information->total_numbers);

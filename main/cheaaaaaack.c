@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 16:59:22 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/17 14:52:28 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 14:33:55 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ static int	if_number_is_max_or_min_tow(int argc, char **argv)
 	i = 0;
 	while (i < argc)
 	{
-		if (ft_atoi(argv[i]) > 2147483647 || ft_atoi(argv[i]) <
-			-2147483648)
+		if (ft_atoi(argv[i]) > 2147483647 || ft_atoi(argv[i]) < -2147483648)
 			return (1);
 		i++;
 	}
@@ -43,11 +42,10 @@ int	if_there_is_no_number_tow(int argc, char **argv)
 	return (0);
 }
 
-
 int	check_format_two(int argc, char **argv)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 1;
 	j = 0;

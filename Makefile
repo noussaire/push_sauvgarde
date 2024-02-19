@@ -6,7 +6,7 @@ CFLAGS := -Wall -Wextra -Werror
 
 RM = rm -f
 
-SRCS = libft/ft_split.c libft/ft_atoi.c libft/ft_strlen.c libft/ft_strjoin.c libft/ft_strdup.c libft/ft_strlen_v_2.c \
+SRCS = libft/ft_split.c libft/ft_atoi.c libft/ft_strlen.c libft/ft_strjoin.c libft/ft_strdup.c \
 		main/format_cheack.c main/main.c main/errors.c main/free.c main/cheaaaaaack.c \
 		main/rempplire.c main/rules.c main/sort.c main/errors2.c main/steps.c main/join_argv.c \
 		sort/tow_number.c sort/three_number.c \

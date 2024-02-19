@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 17:00:57 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/17 14:52:19 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 14:25:02 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,24 +20,6 @@
 # include <string.h>
 # include <unistd.h>
 
-// struct				s_rules
-// {
-// 	int				sa;
-// 	int				sb;
-// 	int				ss;
-
-// 	int				ra;
-// 	int				rb;
-// 	int				rr;
-
-// 	int				rra;
-// 	int				rrb;
-// 	int				rrr;
-
-// 	int				pa;
-// 	int				pb;
-// };
-
 typedef struct data
 {
 	int	*stack_a;
@@ -48,9 +30,6 @@ typedef struct data
 	int	count_stack_a;
 	int	count_stack_b;
 	int	count;
-
-	// for bonus part //
-	int	is_we_use_stack_b;
 
 	int	sa;
 	int	sb;
@@ -78,10 +57,11 @@ int		ft_strlen_tab(char **argv);
 void	plus_petite_number(int *counter, int *duplcate_stack_a, int *sort,
 			int i);
 int		lent(int ac, char **argv);
-int count_num(char *s, char espace);
-int process_data(int format, int numbers, char **new_argv, t_data *information);
-int	if_there_is_no_number_tow(int argc, char **argv);
-int	cheacke_int(char *str);
+int		count_num(char *s, char espace);
+int		process_data(int format, int numbers, char **new_argv,
+			t_data *information);
+int		if_there_is_no_number_tow(int argc, char **argv);
+int		cheacke_int(char *str);
 // error
 int		check_error(int argc, char **argv, int format);
 int		if_there_is_no_number(int argc, char **argv);

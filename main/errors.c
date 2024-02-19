@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 16:59:22 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/17 14:53:16 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 14:37:11 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	cheacke_int(char *str)
 		if ((str[i] < '0' || str[i] > '9') && (str[i] != '-' && str[i] != '+'))
 			return (1);
 		if ((str[i] >= '0' && str[i] <= '9') && (str[i + 1] == '-' || str[i
-				+ 1] == '+'))
+					+ 1] == '+'))
 			return (1);
 		i++;
 	}
@@ -62,8 +62,8 @@ int	if_number_is_max_or_min(int argc, char **argv)
 	i = 0;
 	while (i < argc - 1)
 	{
-		if (ft_atoi(argv[i + 1]) > 2147483647 || ft_atoi(argv[i + 1]) <
-			-2147483648)
+		if (ft_atoi(argv[i + 1]) > 2147483647
+			|| ft_atoi(argv[i + 1]) < -2147483648)
 			return (1);
 		i++;
 	}
@@ -98,14 +98,12 @@ static int	check_if_there_is_double_zero(int argc, char **argv)
 
 int	check_error(int argc, char **argv, int format)
 {
-	
 	if (format == 0)
 	{
 		if (if_there_is_no_number(argc, argv) == 1)
 			return (1);
 		if (check_if_there_is_double_zero(argc, argv) == 1)
 			return (1);
-		
 	}
 	if (format == 1)
 	{
@@ -113,7 +111,6 @@ int	check_error(int argc, char **argv, int format)
 			return (1);
 		if (check_if_there_is_double_one(argc, argv) == 1)
 			return (1);
-		
 	}
 	return (0);
 }

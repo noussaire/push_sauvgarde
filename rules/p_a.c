@@ -6,7 +6,7 @@
 /*   By: nbenasso <nbenasso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 12:33:44 by nbenasso          #+#    #+#             */
-/*   Updated: 2024/02/17 14:55:59 by nbenasso         ###   ########.fr       */
+/*   Updated: 2024/02/19 15:04:50 by nbenasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ static void	set_pa(t_data *information)
 
 void	p_a(t_data *information, int one_more_time)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < one_more_time)
